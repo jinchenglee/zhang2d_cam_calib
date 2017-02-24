@@ -98,9 +98,9 @@ void _lmHomography_cminpack(double* matrix,int numPoints,double *ret)
 		for(i = 0; i < NPARAMS; i++) ret[i] = x[i];
 
 		// release allocated workspace 
-		free (fvec);
-		free (msk);
-		free (x);
+		//free (fvec);
+		//free (msk);
+		//free (x);
 
 		if(PRINT)	// print the number of function calls during iteration 
 			printf("\ninfo: %d nfev: %d\n",info,nfev);
@@ -217,9 +217,9 @@ void _lmARt_cminpack(double *Ai,double *Alm,
 		for(i = 0; i < 3; i++) 		tlm[i] = x[j++];
 
 		// release allocated workspace 
-		free (fvec);
-		free (msk);
-		free (x);
+		//free (fvec);
+		//free (msk);
+		//free (x);
 
 #ifdef _DEBUG
 		// print the number of function calls during iteration 

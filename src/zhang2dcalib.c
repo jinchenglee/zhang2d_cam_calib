@@ -26,10 +26,10 @@ void solveAx0(int m, int n, double* A, double* x)
 	mtxScaVec(D,n,1/D[0],D);
 	mtxShowVec("\nSingular Values:",D,n);
 	}
-	free(tmp);
-	free(V);
-	free(D);
-	free(U);
+	//free(tmp);
+	//free(V);
+	//free(D);
+	//free(U);
 }
 
 /* Normalize image points that belong to calibration pattern. */
@@ -89,7 +89,7 @@ int  homography(int nPoints, double* modelPoints, double* imagePoints, double* H
 	mtxMatCopy(lm_cminpack,3,3,H);
 	
 
-	free(L);
+	//free(L);
 	return 0;
 }
 
@@ -150,8 +150,8 @@ void calcB(int nH, double* H, double* B)
 	B[i++]=x[3]; B[i++]=x[4]; B[i++]=x[5];
 
 	mtxShowMat("[B]",B,3,3);
-	free(x);
-	free(V);
+	//free(x);
+	//free(V);
 }
 
 /**/
@@ -218,8 +218,8 @@ void calcB_UoVo_Known(int nH, double* H, double* B)
 	B[i++]=-Vo*x[1] - Uo*x[0]; B[i++]=-Vo*x[2] - Uo*x[1]; B[i++]= Vo*Vo*x[2] + 2.0*Vo*Uo*x[1] + Uo*Uo*x[0] + x[3];
 
 	mtxShowMat("[B]",B,3,3);
-	free(x);
-	free(V);
+	//free(x);
+	//free(V);
 }
 
 /* Get intrinsic parameters to decomposition matrix B*/
@@ -401,8 +401,8 @@ void Zhang2D_get_distortion(int nPts, double * imgPts, double * imgPtsNormalized
 	};
 
 	mtxAxb(D,((nPts)*2), 2, d, k);
-	free(D);
-	free(d);
+	//free(D);
+	//free(d);
 
 }
 

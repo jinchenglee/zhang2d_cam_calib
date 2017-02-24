@@ -286,7 +286,7 @@ int main( )
 	 printf("\nTotal error with parameters in calib.txt: %.5lf",ErrorTotal);
 	 printf("\n*************************************************************");
    printf("\n\n");
-	 getch();
+	 //getch();
 
    return 0;
 }

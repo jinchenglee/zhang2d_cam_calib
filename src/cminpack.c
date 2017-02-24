@@ -542,14 +542,14 @@ int lmdif0(void fcn(int,int, double*,double*,int*),int m, int n,double x[],int m
 
 	if (*info == 8) *info = 4;
 	for (j=0;j<n;j++)
-		free(fjac[j]);
-	free(fjac);
-	free(wa4);
-	free(wa3);
-	free(wa2);
-	free(wa1);
-	free(qtf);
-	free(diag);
-	free(ipvt);
+		//free(fjac[j]);
+	//free(fjac);
+	//free(wa4);
+	//free(wa3);
+	//free(wa2);
+	//free(wa1);
+	//free(qtf);
+	//free(diag);
+	//free(ipvt);
 	return(0);
 }

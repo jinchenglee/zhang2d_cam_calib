@@ -702,7 +702,7 @@ void mtxAxInxn(double *a, int n, double *x)
 			x[i*n + j]=col[i];
 	}
 
-	free(lu);	free(rp);	free(scale); free(col);	
+	//free(lu);	//free(rp);	//free(scale); //free(col);	
 	return;
 }
 
